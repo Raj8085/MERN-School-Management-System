@@ -41,9 +41,6 @@ app.use(cors(corsOptions))
 
 
 
-
-
-
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 mongoose
     .connect(process.env.MONGO_URL, {
